@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a [routerLink]="[ '../', '1' ]">Category 1</a>
+        </li>
+        <li class="nav-item">
+          <a [routerLink]="[ '../', '2' ]">Category 2</a>
+        </li>
+        <li class="nav-item">
+          <a [routerLink]="[ '../', '3' ]">Category 3</a>
+        </li>
+        <li class="nav-item">
+          <a [routerLink]="[ '../', '4' ]">Category 4</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-8">
+      <app-list [id]="id"></app-list>
+    </div>
+  </div>
+</div>
