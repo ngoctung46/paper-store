@@ -25,9 +25,27 @@
             "styles": [
               "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
+              "src/assets/css/bootstrap.css",
+              "src/assets/css/flaticon.css",
+              "src/assets/css/themify-icons.css",
+              "src/assets/vendors/owl-carousel/owl.carousel.min.css",
+              "src/assets/vendors/nice-select/css/nice-select.css",
+              "src/assets/css/style.css",
               "src/styles.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "src/assets/js/jquery-3.2.1.min.js",
+              "src/assets/js/popper.js",
+              "src/assets/js/bootstrap.min.js",
+              "src/assets/vendors/nice-select/js/jquery.nice-select.min.js",
+              "src/assets/js/owl-carousel-thumb.min.js",
+              "src/assets/js/jquery.validate.min.js",
+              "src/assets/js/jquery.ajaxchimp.min.js",
+              "src/assets/js/mail-script.js",
+              "src/assets/js/gmaps.min.js",
+              "src/assets/js/contact.js",
+              "src/assets/js/theme.js"
+            ],
             "es5BrowserSupport": true
           },
           "configurations": {

@@ -1,9 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { MenuItem } from '../models/menu-item';
 
 const MENU: MenuItem[] = [
   new MenuItem({ name: 'Home', url: '/home' }),
-  new MenuItem({ name: 'Category', url: '/category/all' }),
+  new MenuItem({
+    name: 'Category',
+    url: '/category/all',
+    subMenuItems: [
+      new MenuItem({ name: 'Category 1', url: '/category/1'}),
+      new MenuItem({ name: 'Category 2', url: '/category/2'}),
+    ]
+  }),
   new MenuItem({ name: 'Contact', url: '/contact' }),
   new MenuItem({ name: 'About', url: '/about' })
 ];
