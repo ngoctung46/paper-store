@@ -5,11 +5,13 @@ import { BannerComponent } from './banner/banner.component';
 import { FeatureComponent } from './feature/feature.component';
 import { StaffComponent } from './staff/staff.component';
 import { TestimonialComponent } from './testimonial/testimonial.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [HomeComponent, BannerComponent, FeatureComponent, StaffComponent, TestimonialComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports: [HomeComponent]
 })
