@@ -1,3 +1,4 @@
+import { MainModule } from './../main/main.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FooterComponent } from './footer.component';
