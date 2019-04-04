@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 const ITEM: BannerItem = {
-  title: 'HT Wall Paper Sticker',
-  subTitle: 'We are the best of the best',
+  title: 'Chuyên giấy dán tường Hàn Quốc, tranh 3D. Chất lượng cao và giá cả cạnh tranh.',
+  subTitle: 'Giấy dán tường Hoàng Thạch',
   buttons: [
-    { content: 'View Categories', url: '/category/all' },
-    { content: 'Call Now', url: '0972444570' }
+    { content: 'Xem Danh Mục', url: '/category/all' },
+    { content: 'Liên Hệ: 0972444570', url: '0972444570' }
   ]
 };
 

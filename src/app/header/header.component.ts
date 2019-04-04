@@ -1,19 +1,7 @@
+import { CategoryService } from './../services/category.service';
+import { MenuService } from './../services/menu.service';
 import { Component, OnInit} from '@angular/core';
 import { MenuItem } from '../models/menu-item';
-
-const MENU: MenuItem[] = [
-  new MenuItem({ name: 'Home', url: '/home' }),
-  new MenuItem({
-    name: 'Category',
-    url: '/category/all',
-    subMenuItems: [
-      new MenuItem({ name: 'Category 1', url: '/category/1'}),
-      new MenuItem({ name: 'Category 2', url: '/category/2'}),
-    ]
-  }),
-  new MenuItem({ name: 'Contact', url: '/contact' }),
-  new MenuItem({ name: 'About', url: '/about' })
-];
 
 @Component({
   selector: 'app-header',
@@ -22,10 +10,23 @@ const MENU: MenuItem[] = [
 })
 export class HeaderComponent implements OnInit {
   menuItems: MenuItem[];
-  constructor() { }
+  constructor(private menuService: MenuService, private categoryService: CategoryService) { }
 
   ngOnInit() {
-    this.menuItems = MENU;
+    this.menuService.getMenuItems()
+      .subscribe(menuItems => {
+      this.menuItems = menuItems.sort(this.compare);
+    });
+    this.categoryService.getCategories()
+      .subscribe(categories => {
+        console.log(JSON.stringify(categories));
+      });
+  }
+
+  compare(a, b) {
+    if (a.position < b.position) { return -1; }
+    if (a.position > b.position) { return 1; }
+    return 0;
   }
 
 }

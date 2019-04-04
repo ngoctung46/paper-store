@@ -12,25 +12,25 @@ export class FeatureComponent implements OnInit {
 
   ngOnInit() {
     this.heading = {
-      title: 'Competitive Price',
-      description: 'We have the best price in the market, the best durable product quality which you definitely will not reget'
+      title: 'Giấy dán tường Hoàng Thạch',
+      description: 'Chúng tôi có giá cả rẻ nhất thị trường với những sản phẩm tốt nhất mà bạn hoàn toàn có thể tin tưởng.'
     };
 
     this.items = [
       {
-        title: 'Competitive Price',
-        description: 'As a wholesale, we import the product directly from the authentic factories.' +
-          'Thus, we have variety of product with reasonable price'
+        title: 'Giá cả cạnh tranh',
+        description: 'Với tư cách nhà phân phối chuyên nghiệp, chúng tôi nhập khẩu sản phẩm chính hãng từ nhà máy.' +
+          'Bởi vậy, chúng tôi có nhiều sản phẩm với mẫu mã đang dạng và giá cả cực kỳ cạnh tranh'
       },
       {
-        title: 'Durable Quality',
-        description: 'We have the best quality in terms of product and customer services' +
-          'You will love us as soon as you see us. Let have a try and call us!'
+        title: 'Chất lượng tuyệt hảo',
+        description: 'Chúng tôi cam kết mang đến cho bạn sản phẩm và dịch vụ tốt nhất' +
+          'Bạn sẽ ấn tượng với phong cách phục vụ của chúng tôi. Hãy thử và gọi đến chúng tôi!'
       },
       {
-        title: 'Friendly and Professional Staff',
-        description: 'We have a staffs with passion and responsibility. A smile is the thing' +
-          'you will see when coming to us. Enjoy!'
+        title: 'Nhân viên thân thiện, nhiệt tình và chuyên nghiêp',
+        description: 'Chúng tôi có những nhân viên tận tâm và trách nhiệm. Nụ cười là điều bạn' +
+          'sẽ thấy trước tiên khi gặp chúng tôi. Hãy tận hưởng!'
       }
     ];
   }

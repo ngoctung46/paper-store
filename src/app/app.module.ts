@@ -7,9 +7,10 @@ import { NotFoundComponent } from './not-found.component';
 import { HeaderModule } from './header/header.module';
 import { MainModule } from './main/main.module';
 import { FooterModule } from './footer/footer.module';
-import { LoginComponent } from './auth/login/login.component';
 import { AuthModule } from './auth/auth.module';
-
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { environment } from '../environments/environment';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +22,8 @@ import { AuthModule } from './auth/auth.module';
     MainModule,
     FooterModule,
     AuthModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule,
     AppRoutingModule
   ],
   providers: [],

@@ -1,23 +1,38 @@
-<div class="container">
-  <div class="row">
-    <div class="col-4">
-      <ul class="nav flex-column">
-        <li class="nav-item">
-          <a [routerLink]="[ '../', '1' ]">Category 1</a>
-        </li>
-        <li class="nav-item">
-          <a [routerLink]="[ '../', '2' ]">Category 2</a>
-        </li>
-        <li class="nav-item">
-          <a [routerLink]="[ '../', '3' ]">Category 3</a>
-        </li>
-        <li class="nav-item">
-          <a [routerLink]="[ '../', '4' ]">Category 4</a>
-        </li>
-      </ul>
-    </div>
-    <div class="col-8">
-      <app-list [id]="id"></app-list>
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-3">
+        <aside class="single_sidebar_widget post_category_widget" style="margin-top: 8rem;">
+          <h4 class="widget_title">Danh mục</h4>
+          <ul class="list cat-list">
+            <li *ngFor="let category of categories">
+              <a [routerLink]="['../',category.id]" class="d-flex justify-content-between">
+                <p>{{category.name}}</p>
+              </a>
+            </li>
+          </ul>
+          <div class="br"></div>
+        </aside>
+        <!-- <ul class="nav flex-column">
+              <li class="nav-item">
+                <a [routerLink]="[ '../', '1' ]">Category 1</a>
+              </li>
+              <li class="nav-item">
+                <a [routerLink]="[ '../', '2' ]">Category 2</a>
+              </li>
+              <li class="nav-item">
+                <a [routerLink]="[ '../', '3' ]">Category 3</a>
+              </li>
+              <li class="nav-item">
+                <a [routerLink]="[ '../', '4' ]">Category 4</a>
+              </li>
+            </ul> -->
+      </div>
+      <div class="col-9">
+        <div class="popular_courses section_gap_top">
+          <app-list [id]="id"></app-list>
+        </div>
+      </div>
     </div>
   </div>
-</div>
+</section>

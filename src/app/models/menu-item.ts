@@ -3,6 +3,7 @@ export class MenuItem {
     name: string;
     url: string;
     thumbnailUrl: string;
+    position: number;
     subMenuItems: MenuItem[];
 
     constructor(obj?: any) {
@@ -10,6 +11,7 @@ export class MenuItem {
         this.name           = obj && obj.name           || null;
         this.url            = obj && obj.url            || null;
         this.thumbnailUrl   = obj && obj.thumbnailUrl   || null;
+        this.position       = obj && obj.position       || null;
         this.subMenuItems   = obj && obj.subMenuItems   || null;
     }
 }

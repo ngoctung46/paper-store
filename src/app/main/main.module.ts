@@ -6,6 +6,8 @@ import { MainRoutingModule } from './main-routing.module';
 import { AboutComponent } from './about/about.component';
 import { CategoryModule } from './category/category.module';
 import { HomeModule } from './home/home.module';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { BrowserAnimationsModule  } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [AboutComponent],
@@ -14,7 +16,9 @@ import { HomeModule } from './home/home.module';
     CategoryModule,
     HomeModule,
     ContactModule,
+    CarouselModule,
     ReactiveFormsModule,
+    BrowserAnimationsModule,
     MainRoutingModule
   ]
 })
